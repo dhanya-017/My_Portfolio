@@ -89,11 +89,50 @@ To run this portfolio locally:
 - npm
 
 ### Installation
+- git clone https://github.com/dhanya-017/My_Portfolio.git
+- cd My_Portfolio
+- npm install
+- npm run dev
 
-```bash
-git clone https://github.com/dhanya-017/My_Portfolio.git
-cd My_Portfolio
-npm install
-npm run dev
+The application will be available at:
+http://localhost:5173
 
+## 🚀 Deployment
+
+This project is deployed using **Vercel** with automatic CI/CD.
+
+- Every push to the `main` branch triggers a redeploy
+- Optimized for performance and reliability
+- Custom favicon and metadata configured
+
+🔗 **Live URL:**  
+https://my-portfolio-cyan-nine-63.vercel.app/
+
+---
+
+## 🌱 Future Enhancements
+
+- Add detailed project case studies
+- Improve SEO and accessibility
+- Add animations and micro-interactions
+- Integrate a blog or experience section
+- Set up a custom domain
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me:
+
+- **Email:** dhanyadwivedi170304@gmail.com  
+- **GitHub:** https://github.com/dhanya-017  
+- **Portfolio:** https://my-portfolio-cyan-nine-63.vercel.app/
+
+---
+
+<div align="center">
+
+Made with ❤️ by <strong>Dhanya Dwivedi</strong>
+
+</div>
 
