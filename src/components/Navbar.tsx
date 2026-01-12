@@ -55,7 +55,21 @@ export default function Navbar() {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex justify-center items-center h-16">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo/Branding */}
+          <div className="flex items-center gap-3">
+            <img 
+              src="/dd.png" 
+              alt="DD Logo" 
+              className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg transition-transform duration-300 hover:scale-110"
+            />
+            <h1 className={`text-lg sm:text-xl font-bold transition-all duration-300 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent ${
+              scrolled ? 'from-purple-600 to-blue-600' : 'from-purple-300 to-blue-300'
+            }`}>
+              My Portfolio
+            </h1>
+          </div>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
@@ -66,10 +80,10 @@ export default function Navbar() {
                   activeSection === item.id
                     ? scrolled
                       ? 'bg-purple-200 text-purple-400'
-                      : 'bg-white/20 text-white backdrop-blur-sm'
+                      : 'bg-white/20 text-white'
                     : scrolled
-                    ? 'text-slate-600 hover:text-purple-400 hover:bg-purple-100'
-                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                      ? 'text-slate-600 hover:text-purple-400 hover:bg-purple-100'
+                      : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {item.icon}
@@ -81,32 +95,36 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors duration-300 ${
+            className={`md:hidden p-3 rounded-lg transition-colors duration-300 touch-manipulation ${
               scrolled
                 ? 'text-slate-600 hover:text-purple-400 hover:bg-purple-100'
                 : 'text-white hover:bg-white/10'
             }`}
+            aria-label="Toggle mobile menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-purple-200 rounded-b-2xl shadow-xl mt-2">
-            <div className="py-2 px-2">
+          <div className="md:hidden bg-white border-t border-purple-200 rounded-b-2xl shadow-xl mt-2 overflow-hidden">
+            <div className="py-3 px-3">
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`w-full px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-3 ${
+                  onClick={() => {
+                    scrollToSection(item.id);
+                    setIsOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 touch-manipulation ${
                     activeSection === item.id
-                      ? 'bg-purple-200 text-purple-400'
-                      : 'text-slate-600 hover:text-purple-400 hover:bg-purple-100'
+                      ? 'bg-purple-100 text-purple-600'
+                      : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                   }`}
                 >
                   {item.icon}
-                  {item.label}
+                  <span>{item.label}</span>
                 </button>
               ))}
             </div>

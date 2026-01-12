@@ -206,4 +206,113 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Better touch targets */
+    button, a, input, textarea {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Prevent zoom on input focus */
+    input, textarea, select {
+      font-size: 16px;
+    }
+
+    /* Smooth scrolling for mobile */
+    .scroll-smooth-mobile {
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+
+    /* Better tap targets */
+    .touch-target {
+      min-height: 48px;
+      min-width: 48px;
+      padding: 12px;
+    }
+
+    /* Prevent horizontal scroll */
+    .prevent-overflow {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    /* Mobile-safe animations */
+    .mobile-safe-animation {
+      animation-duration: 0.3s;
+      animation-timing-function: ease-out;
+    }
+
+    /* Better mobile spacing */
+    .mobile-spacing {
+      padding: 1rem;
+      margin: 0.5rem 0;
+    }
+  }
+
+  /* Touch device optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .hover-lift:hover {
+      transform: none;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Better touch feedback */
+    .touch-feedback:active {
+      transform: scale(0.98);
+      opacity: 0.8;
+    }
+
+    /* Smooth transitions for touch */
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    /* Allow text selection where needed */
+    .selectable {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+  }
+
+  /* iOS Safari specific fixes */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* Prevent zoom on landscape */
+    @media (orientation: landscape) {
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+    }
+  }
+
+  /* Android Chrome specific fixes */
+  @supports (-webkit-appearance: none) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+  }
 }
