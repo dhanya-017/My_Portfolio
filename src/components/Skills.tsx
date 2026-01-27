@@ -2,45 +2,33 @@ export default function Skills() {
   const skillCategories = [
     {
       category: 'Programming Languages',
-      skills: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL', 'HTML5', 'CSS3'],
+      skills: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
       color: 'blue',
     },
     {
-      category: 'Frontend Development',
-      skills: ['React.js', 'Redux', 'Tailwind CSS', 'Responsive Design', 'UI/UX Implementation'],
+      category: 'Frontend',
+      skills: ['React.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Redux'],
       color: 'cyan',
     },
     {
-      category: 'Backend Development',
-      skills: ['Node.js', 'Express.js', 'Spring Boot', 'Django', 'RESTful APIs', 'JDBC', 'JSP', 'Servlets'],
+      category: 'Backend & APIs',
+      skills: ['Node.js', 'Express.js', 'Spring Boot', 'RESTful APIs', 'Authentication & Authorization'],
       color: 'green',
     },
     {
       category: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'Oracle'],
+      skills: ['PostgreSQL', 'MySQL', 'MongoDB'],
       color: 'purple',
     },
     {
-      category: 'AI/ML & Computer Vision',
-      skills: ['TensorFlow', 'OpenCV', 'Neural Networks', 'Deep Learning', 'NLP'],
+      category: 'Computer Science Fundamentals',
+      skills: ['Data Structures & Algorithms', 'OOP', 'Design Patterns', 'Time & Space Complexity'],
       color: 'orange',
     },
     {
-      category: 'DevOps & Tools',
-      skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Linux', 'Maven', 'CI/CD'],
+      category: 'Tools & Engineering Practices',
+      skills: ['Git', 'Postman', 'Unit Testing', 'Debugging', 'Code Reviews', 'SDLC', 'Agile', 'CI/CD fundamentals'],
       color: 'slate',
-    },
-    {
-      category: 'Core Competencies',
-      skills: [
-        'Data Structures & Algorithms',
-        'System Design',
-        'Object-Oriented Programming',
-        'Agile Methodologies',
-        'Code Reviews',
-        'Unit Testing',
-      ],
-      color: 'indigo',
     },
   ];
 

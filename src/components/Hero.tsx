@@ -33,9 +33,9 @@ export default function Hero() {
 
           <div className="glass-card rounded-3xl p-8 sm:p-12 mb-8 sm:mb-12 max-w-3xl mx-auto">
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed text-center font-light">
-              Computer Science student specializing in scalable full-stack applications,
-              API development, and intelligent systems. Building production-ready solutions
-              with modern technologies and clean architecture.
+              Final-year Computer Science Engineering student (Class of 2026) with hands-on experience in full-stack software development and backend engineering. Strong foundation in data structures, algorithms, object-oriented programming, RESTful APIs,
+databases, and SDLC. Proven ability to build, test, optimize, and deploy production-grade applications while collaborating in
+Agile, cross-functional teams. Actively seeking Software Engineer / Software Developer roles.
             </p>
           </div>
 

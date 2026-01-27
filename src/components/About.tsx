@@ -35,17 +35,9 @@ export default function About() {
 
           <div className="mb-12 sm:mb-16">
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-4xl mx-auto text-center mb-6 sm:mb-8 px-2">
-              Final-year Computer Science student at Noida Institute of Engineering and Technology
-              with a passion for building scalable, production-ready applications. Currently working
-              as a MERN Stack Developer at Business Curative, where I optimize e-commerce platforms
-              and deliver feature enhancements that improve user experience and system performance.
+              Highly motivated and detail-oriented full-stack software engineer with a strong foundation in computer science and software engineering principles. Proficient in a range of programming languages, including Java, Python, and JavaScript. Experienced in developing scalable and efficient software systems using Agile methodologies and version control systems like Git. Profound understanding of data structures, algorithms, and software design patterns. Excellent problem-solving skills, with the ability to work effectively in collaborative environments and communicate complex ideas clearly.
             </p>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-4xl mx-auto text-center px-2">
-              With hands-on experience in full-stack development, system design, and testing, I focus
-              on writing clean, maintainable code that follows best practices. I've successfully
-              optimized ReactJS dashboards by 20%, built thread-safe booking systems, and integrated
-              AI-powered features into production applications.
-            </p>
+            
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
